@@ -1,16 +1,35 @@
-# todobloc
+<h2>Flutter BLoC Http Get Example | Fetch API Data | Flutter BLoC Pattern Rest Api Call</h1>
+<hr>
+<h3>Source code for the video from <font color="#00ff00">dbestech</font> channel on Youtube</h2>
+<hr>
+<h4>Video description from dbestech channel: </h4></br>
 
-A new Flutter project.
+<font color="#cefad0">
+<p><i>Learn about flutter BLoC pattern 8 fetching data from api or call api using http get request. We covered what is bloc pattern, what are states and events and how to build blocs using them. We also covered how to create states and events using classes and connect them by building blocs. </p>
+<p>We talked about how user interaction creates events and that leads to state changes. flutter bloc pattern rest api call.</p>
 
-## Getting Started
+<p>We also showed how to work for Restful Api with RepositoryProvider.</i></p>
+</font>
+<hr>
 
-This project is a starting point for a Flutter application.
+<h4>Resources for this Flutter project:</h4>
 
-A few resources to get you started if this is your first Flutter project:
+- [Video link youtube](https://www.youtube.com/watch?v=CjCTNPKhgXc)
+- [Youtube dbestech channel](https://www.youtube.com/@dbestech)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<hr>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h4>Screenshots for the project</h4>
+
+<!-- ![Image](list.png) -->
+
+<p align="center">
+    <p>
+        <h4>List screen</h4></br>
+        <img src="list.png" width="300" title="hover text"></br>
+    </p>
+    <p>
+        <h4>Detail screen</h4></br>
+        <img src="detail.png" width="300" title="hover text"></br>
+    </p>
+</p>

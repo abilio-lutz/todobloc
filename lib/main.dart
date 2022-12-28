@@ -5,6 +5,7 @@ import 'package:todobloc/blocs/app_blocs.dart';
 
 import 'blocs/app_events.dart';
 import 'blocs/app_states.dart';
+import 'detail_screen.dart';
 import 'models/user_model.dart';
 
 void main() {
@@ -53,23 +54,32 @@ class Home extends StatelessWidget {
                   itemBuilder: (_, index) {
                     return Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 2.0),
-                      child: Card(
-                        color: Colors.blue,
-                        elevation: 4,
-                        margin: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: ListTile(
-                          title: Text(
-                            userList[index].firstname,
-                            style: const TextStyle(
-                              color: Colors.white,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => DetailScreen(
+                              e: userList[index],
                             ),
-                          ),
-                          subtitle: Text(
-                            userList[index].lastname,
-                            style: const TextStyle(color: Colors.white),
-                          ),
-                          trailing: CircleAvatar(
-                            backgroundImage: NetworkImage(userList[index].avatar),
+                          ));
+                        },
+                        child: Card(
+                          color: Colors.blue,
+                          elevation: 4,
+                          margin: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: ListTile(
+                            title: Text(
+                              userList[index].firstname,
+                              style: const TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            subtitle: Text(
+                              userList[index].lastname,
+                              style: const TextStyle(color: Colors.white),
+                            ),
+                            trailing: CircleAvatar(
+                              backgroundImage: NetworkImage(userList[index].avatar),
+                            ),
                           ),
                         ),
                       ),
